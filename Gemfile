@@ -5,6 +5,7 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'capybara'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Gems used only for assets and not required 
 # in production environments by default.
@@ -16,6 +17,7 @@ gem 'uglifier', '>= 1.0.3'
 group :development do
   gem 'better_errors'
   gem 'rspec-rails'
+  gem 'annotate'
 end
 
 group :production do
