@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="span6 offset3">
+  	<%= simple_form_for(@user, html: { class: 'form-inline' }) do |f| %>
+  	    <%= f.input :name, label: '你的名字' %>
+  	    <%= f.input :email, label: '電子信箱' %>
+  	    <%= f.input :password, label: '密碼' %>
+  	    <%= f.input :password_confirmation, label: '密碼確認' %><br>
+  	    <%= f.button :submit ,class: "btn btn-large btn-primary", value: '建立帳號' %>
+    <% end %>
+  </div>
+</div>

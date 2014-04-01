@@ -6,7 +6,15 @@
         <ol class="breadcrumb">
           <li><%= link_to "Home", home_path %></li> 
           <li><%= link_to "Help", help_path %></li>
-          <li><%= link_to "Sign in", signup_path %></li>
+          <% if signed_in? %>
+            <li><%= link_to 'Users', '#' %></li>
+            <li><%= link_to "Account", '#' %></li>
+            <li><%= link_to 'Profile', current_user %></li>
+            <li><%= link_to 'Settings', '#' %></li>
+            <li><%= link_to '登出', signout_path %></li>
+          <% else %>
+            <li><%= link_to '登入', signin_path %></li>
+          <% end %>
         </ol> 
       </nav>
     </div>
