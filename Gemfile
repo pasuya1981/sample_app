@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'capybara'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'simple_form'
 
 # Gems used only for assets and not required 
 # in production environments by default.
