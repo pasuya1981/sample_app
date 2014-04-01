@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
 </head>
-<body>
+<body lang="TW">
   <%= render 'layouts/header' %>
+  <%= render 'layouts/messages' %>
   <div class="jumbotron">
     <div class="container">
       <%= yield %> 
     </div>
   </div>
   <%= render 'layouts/footer' %>
+  <%= debug(params) if Rails.env.development? %>
 </body>
 </html>

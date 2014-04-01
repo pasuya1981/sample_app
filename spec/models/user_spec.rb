@@ -89,7 +89,7 @@ describe User do
     let(:found_user) { User.find_by_email(@user.email) }
 
     describe "with valid password" do
-      it { should == found_user.authenticate(@user.email) }
+      it { should == found_user.authenticate(@user.password) }
     end
 
     describe "with invalid password" do

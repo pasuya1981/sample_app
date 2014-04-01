@@ -12,6 +12,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'sass-rails'
 gem 'coffee-rails', '~> 3.2.1'
 gem 'uglifier', '>= 1.0.3'
+gem 'factory_girl_rails'
 
 
 group :development do

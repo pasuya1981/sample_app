@@ -4,6 +4,18 @@
 *= require_tree .
 */
 
+
+.debug_dump {
+  clear: both;
+  max-width: 670px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: thin white solid;
+  border-radius: 5px;
+  color: white;
+  background-color: pink;
+}
+
 body {
   max-width: 700px;
   margin-top: 20px;
@@ -110,6 +122,34 @@ footer {
   }
 }
 
+/* Side bar */
+
+aside {
+  section {
+    padding: 10px 0;
+    border-top: 1px solid;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.6em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
 
 
 
