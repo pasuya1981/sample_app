@@ -1,0 +1,5 @@
+<%= simple_form_for(:session, url: sessions_path) do |f| %>
+  <%= f.input :email, label: '電子信箱' %>
+  <%= f.input :password, label: '密碼' %><br>
+  <%= f.button :submit, value: '登入', class: 'btn btn-large btn-primary' %>
+<% end %>

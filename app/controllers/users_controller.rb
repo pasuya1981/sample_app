@@ -6,8 +6,9 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
   	if @user.save
+      sign_in(@user)
   	  flash[:notice] = "User: #{@user.name} has been created!"
-  	  redirect_to users_path
+  	  redirect_to @user
   	else
   	  render 'new'
   	end
