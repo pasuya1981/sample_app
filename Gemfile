@@ -7,6 +7,7 @@ gem 'capybara'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'simple_form'
+gem 'will_paginate'
 
 # Gems used only for assets and not required 
 # in production environments by default.
@@ -14,6 +15,7 @@ gem 'sass-rails'
 gem 'coffee-rails', '~> 3.2.1'
 gem 'uglifier', '>= 1.0.3'
 gem 'factory_girl_rails'
+gem 'faker'
 
 
 group :development do

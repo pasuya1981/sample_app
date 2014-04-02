@@ -1,1 +1,14 @@
-<h1>Users Index</h1>
+<% provide(:title, '全部使用者') %>
+<h1>全部使用者</h1>
+
+<div class="apple_pagination">
+  <%= will_paginate previous_label: '往前', next_label: '往後' %>  
+  
+  <div class="page_info">
+    <ul class="users">
+      <%= render @users %>
+    </ul>  
+  </div>
+
+  <%= will_paginate previous_label: '往前', next_label: '往後' %>
+</div>
